@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles.css">
+    <script src="./toDoList.js" defer></script> -->
+<script defer src="main.js"></script></head>
+
+<body>
+    <div id="content">
+        <div id="header">
+            <div id="logoImgDiv"><img src="8ab2441c19249bf9f104.png" alt="Logo"></div>
+            <div id="searchDiv">
+                <div>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div>
+                    <button><img src="0d5087a71c0263634bd0.svg" alt=""></button>
+                </div>
+            </div>
+            <div id="accountDiv">
+                <button>account</button>
+            </div>
+        </div>
+        <div id="sidebar">
+            <div>Workspace</div>
+            <div id="standardProjectsDiv">
+                <ul>
+                </ul>
+            </div>
+            <div id="newProjectsDiv">
+                <div>
+                    <p>Create Project</p>
+                    <button><img src="f6ac12728d1bad834d46.svg" alt="add"></button>
+                </div>
+                <ul>
+                </ul>
+            </div>
+        </div>
+        <div id="toDoList">
+            <div id="addTask">
+                <p>Add Task</p>
+                <img src="f6ac12728d1bad834d46.svg" alt="Add Task">
+            </div>
+            <div id="taskList">
+                <table>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Title</th>
+                        <th>Detail</th>
+                        <th>Priority</th>
+                        <th>Due Date</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <dialog id="createNewProjectDialog" class="dialogStyling" >
+        <div>
+        <p>Create a new Project!</p>
+        <button><img src="e5a2f01cba4e11490091.svg" alt="close" class="closeDialogButton"></button>
+        </div>
+        <label for="newProjectName">Project Name</label>
+        <input type="text" id="newProjectName">
+        <button id="newProjectCreateButton">Create</button>
+    </dialog>
+    <dialog id="createNewTaskDialog" class="dialogStyling">
+        <div>
+        <p>Create a new Task!</p>
+        <button><img src="e5a2f01cba4e11490091.svg" alt="close" class="closeDialogButton"></button>
+        </div>
+        <label for="newTaskName">Title</label>
+        <input type="text" id="newTaskName">
+        <label for="taskDetails">Details</label>
+        <input type="text" id="taskDetails">
+        <label for="priority">Priority</label>
+        <select name="Priority" id="priority">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+        <label for="taskDateDeadline">Date</label>
+        <input type="date" id="taskDateDeadline">
+        <button id="newTaskCreateButton">Create</button>
+    </dialog>
+</body>
+
+</html>
